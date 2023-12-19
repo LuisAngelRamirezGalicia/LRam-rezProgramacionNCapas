@@ -1,0 +1,76 @@
+﻿@model ML.Empresa
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>View</h2>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h5>Ingrese la informacion solicitada</h5>
+            <hr />
+        </div>
+    </div>
+
+    @using (Html.BeginForm("Form", "Empresa", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="row">
+            <div class="col-md-6 visually-hidden">
+                @Html.LabelFor(model => model.IdEmpresa)
+                @Html.TextBoxFor(model => model.IdEmpresa, new { @class = "form-control" })
+            </div>
+
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.Nombre)
+                @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control" })
+            </div>
+
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.Email)
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.Telefono)
+                @Html.TextBoxFor(model => model.Telefono, new { @class = "form-control" })
+            </div>
+
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.DireccionWeb)
+                @Html.TextBoxFor(model => model.DireccionWeb, new { @class = "form-control" })
+            </div>
+
+
+
+        </div>
+
+
+
+        
+
+
+
+
+
+        <button class="btn btn-success" type="submit">
+            Guardar
+        </button>
+
+
+
+
+
+
+    }
+
+</div>

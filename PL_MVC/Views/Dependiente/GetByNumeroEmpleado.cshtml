@@ -1,0 +1,59 @@
+﻿@model ML.Dependiente
+
+@{
+    ViewBag.Title = "GetByNumeroEmpleado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetByNumeroEmpleado</h2>
+<h2>@Model.Empleado.Nombre</h2>
+
+@Html.ActionLink(" Agregar", "FormDependiente", "Dependiente", new { area = "" }, new { @class = "btn btn-success bi bi-person-plus" })
+
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <td>Editar Dependiente</td>
+            <td>IdDependiente</td>
+            <td>NumeroEmpleado</td>
+
+            <td>Nombre</td>
+            <td>ApellidoPaterno</td>
+            <td>ApellidoMaterno</td>
+            <td>FechaNacimiento</td>
+            <td>EstadoCivil</td>
+            <td>Genero</td>
+            <td>Telefono</td>
+            <td>RFC</td>
+            <td>IdDependiente</td>
+            <td>IdDependienteTipo</td>
+            <td>Tipo</td>
+
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @foreach (ML.Dependiente dependiente in Model.Dependientes)
+        {
+            <tr>
+                <td><a class="btn btn-warning bi bi-pencil" href="@Url.Action("FormDependiente", "Dependiente", new { IdDependiente = dependiente.IdDependiente })"></a></td>
+                <td>@dependiente.IdDependiente</td>
+                <td>@dependiente.Empleado.NumeroEmpleado</td>
+
+                <td>@dependiente.Nombre</td>
+                <td>@dependiente.ApellidoPaterno</td>
+                <td>@dependiente.ApellidoMaterno</td>
+                <td>@dependiente.FechaNacimiento</td>
+                <td>@dependiente.EstadoCivil</td>
+                <td>@dependiente.Genero</td>
+                <td>@dependiente.Telefono</td>
+                <td>@dependiente.RFC</td>
+                <td>@dependiente.IdDependiente</td>
+                <td>@dependiente.DependienteTipo.IdDependienteTipo</td>
+                <td>@dependiente.DependienteTipo.Nombre</td>
+                <td><a class="btn btn-danger bi bi-trash" href="@Url.Action("Delete", "Dependiente", new { IdDependiente= dependiente.IdDependiente})" onclick="return confirm('Estas seguro que deseas eliminar este registro?');"></a></td>
+            </tr>
+        }
+    </tbody>
+</table>

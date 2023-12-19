@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="2e6bf92a-5747-40a1-a960-02c11a5b0568" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56138/Empresa.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Empresa.xsd" MetadataType="Schema" ID="716e4469-bb68-4a7b-ad7e-16d0835e40f8" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?xsd=xsd2" />
+    <MetadataFile FileName="Empresa1.xsd" MetadataType="Schema" ID="3157e7f2-8b3f-4afc-8d75-aefdc88d8814" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?xsd=xsd0" />
+    <MetadataFile FileName="Empresa2.xsd" MetadataType="Schema" ID="2db1287c-48ee-446c-a3f1-ace4f2661207" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?xsd=xsd1" />
+    <MetadataFile FileName="Empresa.disco" MetadataType="Disco" ID="ada9b9f0-5728-4a71-a749-e2ffd668c8d9" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?disco" />
+    <MetadataFile FileName="Empresa3.xsd" MetadataType="Schema" ID="b89e4705-39ed-4493-9d86-e6e3a5bd1a81" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?xsd=xsd3" />
+    <MetadataFile FileName="Empresa4.xsd" MetadataType="Schema" ID="7e39ba70-88d6-469e-ace8-c2215949d880" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?xsd=xsd4" />
+    <MetadataFile FileName="Empresa.wsdl" MetadataType="Wsdl" ID="b4444e8d-839b-4a1a-8cc0-5702abed887a" SourceId="1" SourceUrl="http://localhost:56138/Empresa.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

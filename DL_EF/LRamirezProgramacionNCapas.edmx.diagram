@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="47770852ecea4ebe969ad61fc62c2ee8" Name="Diagram1" ZoomLevel="111">
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Rol" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Empresa" Width="1.5" PointX="5.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Colonia" Width="1.5" PointX="12.125" PointY="4.125" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Direccion" Width="1.5" PointX="14.375" PointY="2.375" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Estado" Width="1.5" PointX="7.625" PointY="4.25" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Municipio" Width="1.5" PointX="9.875" PointY="4.25" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Pai" Width="1.5" PointX="5.375" PointY="4.375" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Colonia__IdMunic__0A9D95DB" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Direccion__IdCol__0D7A0286" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Estado__IdPais__04E4BC85" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Municipio__IdEst__07C12930" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Usuario" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.vwUsuarioGetAll" Width="1.5" PointX="0.75" PointY="6.75" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Direccion__IdUsu__0E6E26BF" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.Fk" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Empleado" Width="1.5" PointX="7.625" PointY="7.125" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Empleado__idEmpr__2EDAF651" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.Dependiente" Width="1.5" PointX="9.875" PointY="7.25" />
+        <EntityTypeShape EntityType="LRamirezProgramacionNCapas.DependienteTipo" Width="1.5" PointX="7.625" PointY="12.125" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Dependien__IdDep__3A4CA8FD" />
+        <AssociationConnector Association="LRamirezProgramacionNCapas.FK__Dependien__Numer__395884C4" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

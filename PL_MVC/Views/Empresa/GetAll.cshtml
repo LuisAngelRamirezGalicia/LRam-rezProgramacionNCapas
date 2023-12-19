@@ -1,0 +1,61 @@
+﻿@model ML.Empresa
+@{
+    ViewBag.Title = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Empresa</h2>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h5>Seleccione una para editarla o + para agregar...</h5>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-auto">
+
+
+        @Html.ActionLink(" Agregar", "Form", "Empresa",new { area = "" } ,new { @class = "btn btn-success bi bi-person-plus" })
+
+
+    </div>
+</div>
+
+
+<br />
+
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <td>Editar</td>
+            <td class="hidden">IdEmpresa</td>
+            <td>Nombre</td>
+            <td>Telefono</td>
+            <td>Email</td>
+            <td>DireccionWeb</td>
+            <td>Eliminar</td>
+        </tr>
+    </thead>
+
+
+    <tbody>
+        @foreach (ML.Empresa empresa in Model.Empresas)
+        {
+            <tr>
+                <td><a class="btn btn-warning bi bi-pencil" href="@Url.Action("Form", "Empresa", new { IdEmpresa = empresa.IdEmpresa })"></a></td>
+                <td class="hidden">@empresa.IdEmpresa</td>
+                <td>@empresa.Nombre</td>
+                <td>@empresa.Telefono</td>
+                <td>@empresa.Email</td>
+                <td>@empresa.DireccionWeb</td>
+
+
+                <td><a class="btn btn-danger bi bi-trash" href="@Url.Action("Delete", "Empresa", new { IdEmpresa= empresa.IdEmpresa})" onclick="return confirm('Estas seguro que deseas eliminar este registro?');"></a></td>
+            </tr>
+        }
+    </tbody>
+</table>
