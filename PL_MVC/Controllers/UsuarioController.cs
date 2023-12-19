@@ -300,7 +300,7 @@ namespace PL_MVC.Controllers
 
             return Json(result.Objects);
         }
-
+        //comentario de prueba para el git  
         public JsonResult GetColonia(int IdMunicipio)
         {
             var result = BL.Colonia.GetByIdMunicipio(IdMunicipio);
