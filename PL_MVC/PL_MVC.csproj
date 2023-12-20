@@ -327,10 +327,20 @@
       <DependentUpon>LRamirezProgramacionNCapasDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\DataSetEjemplo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetEjemplo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSetGrafico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetGrafico.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
@@ -446,6 +456,17 @@
     <Content Include="LRamirezProgramacionNCapasDataSet.xss">
       <DependentUpon>LRamirezProgramacionNCapasDataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="Reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
     <None Include="Reports\DataSetEjemplo.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -453,6 +474,17 @@
     </None>
     <Content Include="Reports\DataSetEjemplo.xss">
       <DependentUpon>DataSetEjemplo.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DataSetGrafico.xsc">
+      <DependentUpon>DataSetGrafico.xsd</DependentUpon>
+    </Content>
+    <None Include="Reports\DataSetGrafico.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetGrafico.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\DataSetGrafico.xss">
+      <DependentUpon>DataSetGrafico.xsd</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -508,6 +540,7 @@
     <Content Include="Views\Dependiente\FormDependiente.cshtml" />
     <Content Include="Views\Dependiente\Modal.cshtml" />
     <Content Include="Views\Report\Show.cshtml" />
+    <Content Include="Views\Report\ShowGrafico.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -562,6 +595,8 @@
     <WCFMetadataStorage Include="Connected Services\EmpresaSoap\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\Report2.rdlc" />
     <EmbeddedResource Include="Reports\ReportEjemplo.rdlc" />
   </ItemGroup>
   <PropertyGroup>
