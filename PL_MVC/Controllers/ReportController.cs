@@ -35,7 +35,7 @@ namespace PL_MVC.Controllers
 
             return View();
         }
-
+        //para mostra grafico 
         public ActionResult ShowGrafico()
         {
             ReportViewer reportViewer = new ReportViewer();
